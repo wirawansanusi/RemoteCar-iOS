@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gZG-ap-uka">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remote Car-->
+        <scene sceneID="ylE-u0-HNm">
+            <objects>
+                <viewController id="gZG-ap-uka" customClass="RemoteCar" customModule="Remote_Car" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NqO-xh-8us"/>
+                        <viewControllerLayoutGuide type="bottom" id="KpG-uP-yiG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wWd-Yg-j6l">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuh-vZ-MHr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LED_Off" highlightedImage="LED_On" translatesAutoresizingMaskIntoConstraints="NO" id="3f2-ug-zQ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ztq-1H-vaT"/>
+                                            <constraint firstAttribute="width" constant="50" id="tlL-rf-vqg"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ztq-1H-vaT"/>
+                                                <exclude reference="tlL-rf-vqg"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Ztq-1H-vaT"/>
+                                                <include reference="tlL-rf-vqg"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Torque_Off" highlightedImage="Torque_On" translatesAutoresizingMaskIntoConstraints="NO" id="I7v-Nk-dHf">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1SP-nf-ZQK"/>
+                                            <constraint firstAttribute="width" constant="100" id="QiW-sb-uVF"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="1SP-nf-ZQK"/>
+                                                <exclude reference="QiW-sb-uVF"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="1SP-nf-ZQK"/>
+                                                <include reference="QiW-sb-uVF"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Steer_Off" highlightedImage="Steer_On" translatesAutoresizingMaskIntoConstraints="NO" id="fgU-ek-Ddc">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="KLM-cD-Ak5"/>
+                                            <constraint firstAttribute="width" constant="100" id="Zoc-Ue-0ER"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="KLM-cD-Ak5"/>
+                                                <exclude reference="Zoc-Ue-0ER"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="KLM-cD-Ak5"/>
+                                                <include reference="Zoc-Ue-0ER"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="Speed_Min" maximumValueImage="Speed_Max" translatesAutoresizingMaskIntoConstraints="NO" id="wh4-lQ-yXI">
+                                        <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="0.82344933710000001" green="0.33047420669999999" blue="0.27694004550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="196" id="2i8-yM-dzK"/>
+                                            <constraint firstAttribute="height" constant="30" id="Fel-2i-wmE"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="2i8-yM-dzK"/>
+                                                <exclude reference="Fel-2i-wmE"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="2i8-yM-dzK"/>
+                                                <include reference="Fel-2i-wmE"/>
+                                            </mask>
+                                        </variation>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zwc-tV-Hd6">
+                                        <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9lX-Jd-Y1B"/>
+                                            <constraint firstAttribute="width" constant="114" id="ZZi-lv-efn"/>
+                                        </constraints>
+                                        <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="thumbTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="9lX-Jd-Y1B"/>
+                                                <exclude reference="ZZi-lv-efn"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="9lX-Jd-Y1B"/>
+                                                <include reference="ZZi-lv-efn"/>
+                                            </mask>
+                                        </variation>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fgU-ek-Ddc" firstAttribute="leading" secondItem="nuh-vZ-MHr" secondAttribute="leading" constant="100" id="5u1-on-DLL"/>
+                                    <constraint firstItem="wh4-lQ-yXI" firstAttribute="top" secondItem="nuh-vZ-MHr" secondAttribute="top" constant="47" id="A97-dz-8Qr"/>
+                                    <constraint firstAttribute="trailing" secondItem="wh4-lQ-yXI" secondAttribute="trailing" constant="52" id="Ahh-n3-hK8"/>
+                                    <constraint firstAttribute="bottom" secondItem="zwc-tV-Hd6" secondAttribute="bottom" constant="160" id="PIb-78-QM5"/>
+                                    <constraint firstAttribute="bottom" secondItem="fgU-ek-Ddc" secondAttribute="bottom" constant="125" id="bx6-pC-ahw"/>
+                                    <constraint firstAttribute="bottom" secondItem="I7v-Nk-dHf" secondAttribute="bottom" constant="125" id="hdt-qP-3vF"/>
+                                    <constraint firstItem="3f2-ug-zQ3" firstAttribute="centerX" secondItem="nuh-vZ-MHr" secondAttribute="centerX" id="op9-kM-TCE"/>
+                                    <constraint firstAttribute="trailing" secondItem="I7v-Nk-dHf" secondAttribute="trailing" constant="100" id="sPg-r0-6Za"/>
+                                    <constraint firstItem="3f2-ug-zQ3" firstAttribute="top" secondItem="nuh-vZ-MHr" secondAttribute="top" constant="37" id="vJn-aA-yVe"/>
+                                    <constraint firstItem="zwc-tV-Hd6" firstAttribute="leading" secondItem="nuh-vZ-MHr" secondAttribute="leading" constant="93" id="w9F-6S-qVK"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="3f2-ug-zQ3"/>
+                                        <exclude reference="I7v-Nk-dHf"/>
+                                        <exclude reference="fgU-ek-Ddc"/>
+                                        <exclude reference="wh4-lQ-yXI"/>
+                                        <exclude reference="zwc-tV-Hd6"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="A97-dz-8Qr"/>
+                                        <exclude reference="Ahh-n3-hK8"/>
+                                        <exclude reference="PIb-78-QM5"/>
+                                        <exclude reference="w9F-6S-qVK"/>
+                                        <exclude reference="op9-kM-TCE"/>
+                                        <exclude reference="vJn-aA-yVe"/>
+                                        <exclude reference="hdt-qP-3vF"/>
+                                        <exclude reference="sPg-r0-6Za"/>
+                                        <exclude reference="5u1-on-DLL"/>
+                                        <exclude reference="bx6-pC-ahw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="3f2-ug-zQ3"/>
+                                        <include reference="I7v-Nk-dHf"/>
+                                        <include reference="fgU-ek-Ddc"/>
+                                        <include reference="wh4-lQ-yXI"/>
+                                        <include reference="zwc-tV-Hd6"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="A97-dz-8Qr"/>
+                                        <include reference="Ahh-n3-hK8"/>
+                                        <include reference="PIb-78-QM5"/>
+                                        <include reference="w9F-6S-qVK"/>
+                                        <include reference="op9-kM-TCE"/>
+                                        <include reference="vJn-aA-yVe"/>
+                                        <include reference="hdt-qP-3vF"/>
+                                        <include reference="sPg-r0-6Za"/>
+                                        <include reference="5u1-on-DLL"/>
+                                        <include reference="bx6-pC-ahw"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nuh-vZ-MHr" secondAttribute="trailing" constant="-20" id="1tH-Mf-vch"/>
+                            <constraint firstItem="nuh-vZ-MHr" firstAttribute="leading" secondItem="wWd-Yg-j6l" secondAttribute="leadingMargin" constant="-20" id="37b-20-36U"/>
+                            <constraint firstItem="KpG-uP-yiG" firstAttribute="top" secondItem="nuh-vZ-MHr" secondAttribute="bottom" id="Qgo-Xg-3WI"/>
+                            <constraint firstItem="nuh-vZ-MHr" firstAttribute="top" secondItem="wWd-Yg-j6l" secondAttribute="topMargin" id="uiO-F8-Cdy">
+                                <variation key="heightClass=compact" constant="50"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nuh-vZ-MHr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Qgo-Xg-3WI"/>
+                                <exclude reference="1tH-Mf-vch"/>
+                                <exclude reference="37b-20-36U"/>
+                                <exclude reference="uiO-F8-Cdy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="nuh-vZ-MHr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Qgo-Xg-3WI"/>
+                                <include reference="1tH-Mf-vch"/>
+                                <include reference="37b-20-36U"/>
+                                <include reference="uiO-F8-Cdy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dashboardView" destination="nuh-vZ-MHr" id="HU8-7P-pHt"/>
+                        <outlet property="itemSlot1" destination="3f2-ug-zQ3" id="Crk-i1-pao"/>
+                        <outlet property="itemSlot2" destination="I7v-Nk-dHf" id="3CJ-6z-WGI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01w-Wf-ICm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="-421.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LED_Off" width="50" height="50"/>
+        <image name="LED_On" width="50" height="50"/>
+        <image name="Speed_Max" width="25" height="25"/>
+        <image name="Speed_Min" width="25" height="25"/>
+        <image name="Steer_Off" width="100" height="100"/>
+        <image name="Steer_On" width="100" height="100"/>
+        <image name="Torque_Off" width="100" height="100"/>
+        <image name="Torque_On" width="100" height="100"/>
+    </resources>
+</document>
